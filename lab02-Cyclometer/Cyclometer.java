@@ -55,7 +55,7 @@ public class Cyclometer{
             //Give total distance of combined trips 
         
             //Print out the output data
-        System.out.println("Trip 1 was "+(distanceTrip1)+"miles");
+        System.out.println("Trip 1 was "+(distanceTrip1)+" miles");
         System.out.println("Trip 2 was "+(distanceTrip2)+" miles");
         System.out.println("The total distance was "+(totalDistance)+" miles");
         
