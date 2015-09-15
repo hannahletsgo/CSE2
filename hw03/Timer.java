@@ -7,6 +7,7 @@
 //Calculate the amount of time remaining until dinner
 //Use military time in form int HHMM
 
+//import the scanner
 import java.util.Scanner;
 
 public class Timer {
@@ -14,7 +15,7 @@ public class Timer {
     //create main method
     public static void main(String[] args) {
         
-        //create scanner class for user input
+        //declare an instance of Scanner object and call the Scanner constructor
         Scanner myScanner = new Scanner(System.in);
         
         //prompt user for current time
@@ -28,12 +29,13 @@ public class Timer {
         //calculate the amount of time remaining until dinner
         double waitingTime = dinnerTime - currentTime; 
         
+        //separate time into hours and minutes
         int dinnerTimeMinutes = dinnerTime - 100 * ((int) (dinnerTime/100));
         int currentTimeMinutes = currentTime - 100 * ((int) (currentTime/100));
         
-        //separate time into hours and minutes
         int waitingTimeHours = (int) waitingTime/100;
         
+        //make sure minutes are out of 60
         if(dinnerTimeMinutes < currentTimeMinutes) {
         int waitingTimeMinutes = (dinnerTimeMinutes - currentTimeMinutes) + 60;
         //print the result
